@@ -12,7 +12,7 @@ def info():
     return jsonify({
     	'time': datetime.datetime.now().strftime("%I:%M:%S%p  on %B %d, %Y"),
     	'hostname': socket.gethostname(),
-        'message': 'You are doing great, Felipe!',
+        'message': 'You are doing great, Felipe!!',
         'deployed_on': 'kubernetes'
     })
 
@@ -25,4 +25,5 @@ def health():
 if __name__ == '__main__':
 
     app.run(host="0.0.0.0")
+
 
